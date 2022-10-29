@@ -1,11 +1,20 @@
-.App {
-  text-align: center;
+h1 {
+  font-family: 'Loved by the King', cursive;
+  color: violet;
+  font-style: italic; 
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.but1, .but2 {
+  position: absolute;
+  margin-top: 150px;
 }
+.but1 {
+  margin-left: 300px;
+}
+.but2 {
+  margin-left: -300px;
+}
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -14,25 +23,45 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  text-align: center;
+  background-image: url("https://besthqwallpapers.com/Uploads/11-8-2021/174478/thumb2-playstation-carbon-logo-4k-grunge-art-carbon-background-creative.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
   min-height: 100vh;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
+  font-family: 'Times New Roman', Times, serif;
   color: white;
 }
 
 .App-link {
-  color: #61dafb;
+  color: #8fe7ff;
+  text-decoration: none;
+  transition: all 0.5s ease;
+  margin-top: 50px;
+}
+
+.App-link:hover {
+  color: #3db229;
+  transition: all 0.5s ease;
 }
 
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+.rutas {
+  position: fixed;
+  margin-top: 500px;
 }

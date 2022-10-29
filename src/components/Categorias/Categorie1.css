@@ -1,0 +1,121 @@
+* {
+    box-sizing: border-box;
+}
+
+.item1, .item2, .item3, .item4 {
+    display: inline-block;
+    margin-left: 1px;
+}
+
+.item{
+    width: 80%;
+    height: 100%;
+    margin-left: 5px;
+}
+
+.container1 .item {
+    flex: 0 0 100%;
+    padding-top: 45%;
+    border-radius: 8px;
+    scroll-snap-align: start;
+}
+
+.flip-card {
+    background-color:transparent;
+    width: 300px;
+    height: 200px;
+    perspective: 1000px;
+}
+
+.flip-card-general {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style:  preserve-3d;
+}
+
+.flip-card-general:hover {
+    transform: rotateY(180deg);
+}
+
+.flip-card-frente,
+.flip-card-detras {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 16px;
+}
+
+.flip-card-frente {
+    background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 2px 16px 52px 0 rgba(0, 0, 0, 0.37);
+    width: 280px;
+    height: 200px;
+    border-color: rgb(255, 255, 255);
+}
+
+.item1 .flip-card-frente img {
+    width: 110px;
+    margin-top: 2rem;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+.item2 .flip-card-frente img {
+    width: 110px;
+    margin-top: 3rem;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+.item3 .flip-card-frente img {
+    width: 100px;
+    margin-top: 2rem;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+.item4 .flip-card-frente img {
+    width: 160px;
+    margin-top: 3.5rem;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+
+
+.flip-card-detras {
+    background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 2px 16px 52px 0 rgba(0, 0, 0, 0.37);
+    width: 280px;
+    height: 200px;
+    border-color: rgb(255, 255, 255);
+    margin-left: 20px;
+    transform: rotateY(180deg);
+}
+
+.flip-card-detras img {
+    display: flex;
+    justify-content: left;
+    width: 280px;
+    height: 160px;
+    border-radius: 20px;
+}
+
+.flip-card-detras span{
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    margin-top: -1px;
+    color: #fff;
+    font-style: italic;
+}
+

@@ -1,0 +1,51 @@
+import Counter from './components/Counter/Counter'
+import Title from './components/Title/Title'
+import Effect from './components/Effect/Effect'
+import MercadoLibre from './components/MercadoLibre/MercadoLibre'
+import Navbar from './components/NavBar/Navbar';
+import { useState } from 'react';
+import ItemListContainer from './components/ItemListContainer/ItemListContainer';
+import './App.css';
+import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer'
+
+function App() {
+  const [page, setPage] = useState('list')
+  // const [show, setShow] = useState(true)
+
+  return (
+    <div className="App">
+      {/* <button onClick={()=> setShow(!show)}>Show/Hide</button> */}
+      <header>
+        <Navbar />
+        <div>
+          <button className='but1' onClick={() => setPage('list')}>Listado</button>
+          <button className='but2'  onClick={() => setPage('detail')}>Detalle</button>
+        </div>
+        <div className="App-header">
+          {page === 'list' && <ItemListContainer greeting='Productos' />}
+          {page === 'detail' && <ItemDetailContainer />}
+        </div>
+
+
+        {/* <Counter>
+    //       <Title title='contar manzanas'/>
+    //     </Counter>
+
+    //     <Counter>
+    //       <Title title='contar naranjas'/>
+    //     </Counter> */}
+
+        {/* //    {show ? <Effect /> : null} */}
+
+
+      </header>
+
+    </div>
+
+    // <div className='App'>
+    //   <MercadoLibre />
+    // </div>
+  );
+}
+
+export default App;
