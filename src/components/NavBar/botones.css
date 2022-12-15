@@ -4,13 +4,12 @@
   align-items: center;
   flex-wrap: wrap;
 }
-
 .container2 a {
   position: relative;
   display: inline-block;
   padding: 15px 45px;
   margin-top: 35px;
-  border: 2px solid #b91bbe;
+  border: 2px solid #ffffff;
   margin-left: 13px;
   margin-right: 13px;
   text-transform: uppercase;
@@ -24,7 +23,7 @@
 }
 
 .container2 a:hover {
-  color: #000;
+
   box-shadow: 0 0 10px #b91bbe,
     0 0 10px #f700ff,
     0 0 20px #f700ff,
@@ -37,6 +36,8 @@
   z-index: 100;
   color: #fff;
 }
+
+
 
 .container2 a:nth-child(2) {
   filter: hue-rotate(80deg);
@@ -114,7 +115,7 @@
   display: inline-block;
   padding: 15px 45px;
   margin-top: 35px;
-  border: 2px solid #143BBC;
+  border: 2px solid #ffffff;
   margin-left: 13px;
   margin-right: 13px;
   text-transform: uppercase;
@@ -217,7 +218,7 @@
   display: inline-block;
   padding: 15px 45px;
   margin-top: 35px;
-  border: 2px solid #c02f2f;
+  border: 2px solid #ffffff;
   margin-left: 13px;
   margin-right: 13px;
   text-transform: uppercase;
@@ -322,7 +323,7 @@
   display: inline-block;
   padding: 15px 45px;
   margin-top: 35px;
-  border: 2px solid #54C72E;
+  border: 2px solid #ffffff;
   margin-left: 13px;
   margin-right: 13px;
   text-transform: uppercase;
@@ -407,6 +408,7 @@
 /*  FIN DEL CONTAINER 4 */
 
 @media only screen and (max-width: 1000px) {
+
   /*Tablets [601px -> 1200px]*/
   .container2 a {
     position: relative;
@@ -418,6 +420,7 @@
     letter-spacing: 1px;
     font-size: 10px;
   }
+
   .container1 a {
     position: relative;
     display: inline-block;
@@ -427,6 +430,7 @@
     font-weight: 300;
     font-size: 10px;
   }
+
   .container3 a {
     position: relative;
     display: inline-block;
@@ -437,6 +441,7 @@
     letter-spacing: 1px;
     font-size: 10px;
   }
+
   .container4 a {
     position: relative;
     display: inline-block;

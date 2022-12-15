@@ -50,7 +50,6 @@ const ItemListContainer = ({ greeting }) => {
             <div className='flip-card'>
                 <div className='flip-card-general'>
                     <div className='flip-card-frente'>
-                        <div className="Hover">Read More >>> </div>
                         <img src='https://cdn-icons-png.flaticon.com/512/2797/2797843.png' alt={products.name}></img>
                     </div>
                     <div className='flip-card-detras'>

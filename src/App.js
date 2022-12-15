@@ -9,20 +9,11 @@ function App() {
   // const [page, setPage] = useState('list')
   return (
     <div className="App-header">
-      {/* <Navbar />
-      <div>
-        <button className='but1' onClick={() => setPage('list')}>Listado</button>
-        <button className='but2' onClick={() => setPage('detail')}>Detalle</button>
-      </div>
-      <div className="App-header">
-        {page === 'list' && <ItemListContainer greeting='Productos' />}
-        {page === 'detail' && <ItemDetailContainer />} */}
+  
+     
       <BrowserRouter>
-        <Navbar />
-        {/* <div className='rutas'>
-          <Link to='/'>Listado</Link>
-          <Link to='/detail'>Detalle</Link>
-        </div> */}
+        {/* <Navbar /> */}
+       
         <Routes>
           <Route path='/' element={<ItemListContainer greeting='Listado de Juegos'/>} />
           <Route path='/category/:categoryId' element={<ItemListContainer greeting='Listado de Juegos'/>} />

@@ -1,8 +1,8 @@
 h2 {
-  position: relative;
+  position: fixed;
   font-size: 2rem;
   font-family: sans-serif;
-  -webkit-text-stroke: 0.3vw #2b26657b;
+  -webkit-text-stroke: 0.3vw #000000;
   text-transform: uppercase;
 }
 
@@ -13,7 +13,7 @@ h2::before {
   left: 0;
   width: 0%;
   height: 100%;
-  color: #4fd5ed;
+  color: #d26e04;
   -webkit-text-stroke: 0vw #383d52;
   border-right: 3px solid #1f1d4d;
   overflow: hidden;
@@ -34,19 +34,15 @@ h2::before {
 .container {
   width: 100%;
   height: 130px;
-  background: linear-gradient(rgb(0, 0, 0), rgba(60, 0, 255, 0.495));
-  transition: all 1s ease-in-out;
-  border-bottom: 3px double black;
+  background: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0));
+  transition: 2s ;
   position: fixed;
   top: 0;
-  scrollbar-width: none;
 }
 
 .container:hover {
-  border-bottom: 10px solid white;
-  background: linear-gradient(rgba(60, 0, 255, 0.495), rgb(0, 0, 0));
-  transition: all 1s ease-in-out;
-  border-bottom-style: groove;
+  background: linear-gradient(rgba(40, 57, 70, 0.232), rgba(0, 0, 0, 0));
+  transition: transform 2s;
   width: 100%;
 }
 
@@ -68,7 +64,7 @@ h2::before {
 .menu {
   display: flex;
   justify-content: right;
-  padding-right: 135px;
+  padding-right: 210px;
 }
 
 .menu .cart {
